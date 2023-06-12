@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <title>Drumkit</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="drumkit-container">
+        <div class="top-kit">
+          <div data-key="84" class="key tom-container-01">
+            <div class="bottom tom"></div>
+            <div class="mid tom"></div>
+            <div class="top tom"><kbd>T</kbd></div>
+          </div>
+
+          <div data-key="89" class="key tom-container-02">
+            <div class="bottom tom"></div>
+            <div class="mid tom"></div>
+            <div class="top tom"><kbd>Y</kbd></div>
+          </div>
+        </div>
+
+        <div class="mid-kit">
+          <div class="hi-hat-container">
+            <div class="bottom hi-hat"></div>
+            <div data-key="70" class="key top hi-hat"><kbd>F</kbd></div>
+          </div>
+
+          <div data-key="71" class="key snare-container">
+            <div class="bottom snare"></div>
+            <div class="mid snare"></div>
+            <div class="top snare"><kbd>G</kbd></div>
+          </div>
+
+          <div data-key="72" class="key ride"><kbd>H</kbd></div>
+        </div>
+
+        <div class="bottom-kit">
+          <div data-key="86" class="key l-kick"><kbd>V</kbd></div>
+          <div data-key="66" class="key r-kick"><kbd>B</kbd></div>
+
+          <div data-key="78" class="key floor-tom-container-01">
+            <div class="bottom floor-tom"></div>
+            <div class="mid floor-tom"></div>
+            <div class="top floor-tom"><kbd>N</kbd></div>
+          </div>
+        </div>
+        <audio data-key="84" src="./src/audio/tom.wav"></audio>
+        <audio data-key="89" src="./src/audio/tom.wav"></audio>
+        <audio data-key="70" src="./src/audio/hihat.wav"></audio>
+        <audio data-key="71" src="./src/audio/snare.wav"></audio>
+        <audio data-key="72" src="./src/audio/ride.wav"></audio>
+        <audio data-key="67" src="./src/audio/tom.wav"></audio>
+        <audio data-key="66" src="./src/audio/kick.wav"></audio>
+        <audio data-key="86" src="./src/audio/kick.wav"></audio>
+        <audio data-key="78" src="./src/audio/boom.wav"></audio>
+      </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
